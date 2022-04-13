@@ -29,8 +29,12 @@ function App() {
       height={maxWidth / 2}
       style={{ border: "2px solid red" }}
       onClick={(e)=>{
-       
+      if(e.clientX<maxWidth && e.clientY<maxHeight){
+
         alert(JSON.stringify({width:e.clientX,height:e.clientY}))
+      }
+       
+
       }}
     />
   );
