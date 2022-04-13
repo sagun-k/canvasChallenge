@@ -28,6 +28,10 @@ function App() {
       width={maxHeight / 2}
       height={maxWidth / 2}
       style={{ border: "2px solid red" }}
+      onClick={(e)=>{
+       
+        alert(JSON.stringify({width:e.clientX,height:e.clientY}))
+      }}
     />
   );
 }
